@@ -1,7 +1,9 @@
 import React from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
+import AboutMe from '../AboutMe/AboutMe';
 import Contact from '../Contact/Contact';
 import ShowProjects from '../Projects/ShowProjects/ShowProjects';
+
 
 const Home = () => {
     const handleResumeView = () => {
@@ -23,6 +25,9 @@ const Home = () => {
                 <Col className="text-center">
                     <img src="https://i.ibb.co/7XG8mPT/Ruhul-PP.jpg" alt="md ruhul amin khan" />
                 </Col>
+            </Row>
+            <Row>
+                <AboutMe></AboutMe>
             </Row>
 
             <Row className="bg-light my-5 rounded">
