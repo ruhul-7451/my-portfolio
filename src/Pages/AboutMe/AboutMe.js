@@ -1,7 +1,7 @@
 import React from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 import { SiFirebase, SiTailwindcss, SiBootstrap, SiBloglovin } from "react-icons/si";
-import { DiReact, DiNodejs, DiMongodb, DiJsBadge, DiHtml5, DiCss3, DiHeroku, DiCode } from "react-icons/di";
+import { DiReact, DiNodejs, DiMongodb, DiJsBadge, DiHtml5, DiCss3, DiHeroku, DiCode, DiStackoverflow } from "react-icons/di";
 import { FiGithub } from "react-icons/fi";
 
 const AboutMe = () => {
@@ -36,15 +36,17 @@ const AboutMe = () => {
         window.open('https://tailwindcss.com/', '_blank')
     }
     return (
-        <div className="bg-light my-3 p-3">
+        <Container className="my-3">
             <Row className="justify-content-center align-items-center">
-                <Col xs={4}><img src="https://i.ibb.co/7XG8mPT/Ruhul-PP.jpg" className="img-fluid" alt="" /></Col>
+                <Col xs={12} md={4} className="mb-3 text-center">
+                    <img src="https://i.ibb.co/7XG8mPT/Ruhul-PP.jpg" className="img-fluid shadow" alt="ruhul avater" />
+                </Col>
                 <Col className="fs-5">
                     <p className="fw-bold">Hello, buddy...</p>
                     <p>This is <span className="fs-3">Ruhul</span>, I build things for the web. Currently, I am a React Developer apprentice. I am developing various projects and learning lots of new skills which you can see on my Projects section. I am building robust and flexible React projects those are performant and smooth</p>
                 </Col>
             </Row>
-            <Row className="mt-5"> <h3>I'm skilled at</h3></Row>
+            <Row className="mt-5"> <h3>I'm Skilled at</h3></Row>
             <Row>
                 <Row xs={1} md={2} lg={5} className="g-4 m-0">
                     <Col>
@@ -134,7 +136,7 @@ const AboutMe = () => {
                 <Row className="mt-5">
                     <h3>Some of my Dev Stats</h3>
                 </Row>
-                <Card className="border-0 shadow text-center p-0 my-3" onClick={handleTailwind}>
+                <Card className="border-0 shadow rounded text-center my-3">
                     <Card.Body className="align-items-center justify-content-between">
                         <Row xs={1} md={2} lg={4}>
                             <Col>
@@ -153,16 +155,15 @@ const AboutMe = () => {
                                 <h5>Blogs Reach</h5>
                             </Col>
                             <Col>
-                                <DiCode className="fs-1" />
+                                <DiStackoverflow className="fs-1" />
                                 <h1>0</h1>
                                 <h5>SO Reputations</h5>
                             </Col>
-
                         </Row>
                     </Card.Body>
                 </Card>
             </Row>
-        </div >
+        </Container >
     );
 };
 

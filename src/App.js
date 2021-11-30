@@ -9,22 +9,23 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Home from './Pages/Home/Home';
 import ShowProjects from './Pages/Projects/ShowProjects/ShowProjects';
 import Contact from './Pages/Contact/Contact';
+import AboutMe from './Pages/AboutMe/AboutMe';
+import Blogs from './Pages/Projects/Blogs/Blogs';
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Header></Header>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/projects" element={<ShowProjects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <Footer></Footer>
-      </BrowserRouter>
-
-    </div>
+    <BrowserRouter>
+      <Header></Header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<AboutMe />} />
+        <Route path="/projects" element={<ShowProjects />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/blogs" element={<Blogs />} />
+      </Routes>
+      <Footer></Footer>
+    </BrowserRouter>
   );
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Col, Form } from 'react-bootstrap';
+import { Button, Col, Container, Form } from 'react-bootstrap';
 import { FaTelegramPlane, FaGithub, FaLinkedin } from 'react-icons/fa';
 const Contact = () => {
     const handleGitHub = () => {
@@ -10,16 +10,16 @@ const Contact = () => {
     }
 
     return (
-        <div>
-            <div className="p-3 text-center">
-                <h4>
-                    Follow me on
-                </h4>
+        <Container style={{
+            height: '583px'
+        }}>
+            <Col className="text-center mt-3">
+                <h4>Follow me</h4>
                 <FaGithub className="fs-1 me-3" onClick={handleGitHub} />
                 <FaLinkedin className="fs-1 text-primary" onClick={handleLinkedIN} />
-            </div>
-
-            <Col xs={5} className="p-3 mx-auto">
+            </Col>
+            <h3 className="text-center text-secondary mt-3">Send me Message</h3>
+            <Col xs={12} md={5} className="p-3 mx-auto">
                 <Form action="https://formsubmit.co/officialruhulaminshuvo@gmail.com" method="POST" >
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Control type="text" placeholder="Your Name" />
@@ -28,15 +28,15 @@ const Contact = () => {
                         <Form.Control type="email" placeholder="Your email" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Your Message</Form.Label>
-                        <Form.Control as="textarea" rows={3} />
+                        <Form.Control as="textarea" rows={3} placeholder="Your Message" />
                     </Form.Group>
                     <Button variant="primary" type="submit">
                         Send Message <FaTelegramPlane />
                     </Button>
                 </Form>
             </Col >
-        </div >
+
+        </Container >
     );
 };
 
