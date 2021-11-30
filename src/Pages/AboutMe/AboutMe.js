@@ -1,7 +1,9 @@
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
-import { SiFirebase, SiTailwindcss, SiBootstrap } from "react-icons/si";
-import { DiReact, DiNodejs, DiMongodb, DiJsBadge, DiHtml5, DiCss3, DiHeroku } from "react-icons/di";
+import { SiFirebase, SiTailwindcss, SiBootstrap, SiBloglovin } from "react-icons/si";
+import { DiReact, DiNodejs, DiMongodb, DiJsBadge, DiHtml5, DiCss3, DiHeroku, DiCode } from "react-icons/di";
+import { FiGithub } from "react-icons/fi";
+
 const AboutMe = () => {
     const handleReact = () => {
         window.open('https://reactjs.org/docs/create-a-new-react-app.html', '_blank')
@@ -38,12 +40,13 @@ const AboutMe = () => {
             <Row className="justify-content-center align-items-center">
                 <Col xs={4}><img src="https://i.ibb.co/7XG8mPT/Ruhul-PP.jpg" className="img-fluid" alt="" /></Col>
                 <Col className="fs-5">
-                    <p>Hello, buddy...</p>
-                    <p>This is <span className="fs-3">Ruhul</span> I build things for the web. Currently, I am a React Developer apprentice. I am developing various projects and learning lots of new skills which you can see on my Projects section. I am building robust and flexible React projects those are performant and smooth</p>
+                    <p className="fw-bold">Hello, buddy...</p>
+                    <p>This is <span className="fs-3">Ruhul</span>, I build things for the web. Currently, I am a React Developer apprentice. I am developing various projects and learning lots of new skills which you can see on my Projects section. I am building robust and flexible React projects those are performant and smooth</p>
                 </Col>
             </Row>
+            <Row className="mt-5"> <h3>I'm skilled at</h3></Row>
             <Row>
-                <Row xs={2} md={3} lg={5} className="g-4">
+                <Row xs={1} md={2} lg={5} className="g-4 m-0">
                     <Col>
                         <Card className="border-0 shadow btn p-0" onClick={handleReact}>
                             <Card.Body className="d-flex align-items-center justify-content-center">
@@ -85,7 +88,7 @@ const AboutMe = () => {
                         </Card>
                     </Col>
                 </Row>
-                <Row xs={2} md={3} lg={5} className="g-4">
+                <Row xs={1} md={2} lg={5} className="g-4 m-0">
                     <Col>
                         <Card className="border-0 shadow btn p-0" onClick={handleHtml}>
                             <Card.Body className="d-flex align-items-center justify-content-center">
@@ -128,6 +131,36 @@ const AboutMe = () => {
                     </Col>
                 </Row>
 
+                <Row className="mt-5">
+                    <h3>Some of my Dev Stats</h3>
+                </Row>
+                <Card className="border-0 shadow text-center p-0 my-3" onClick={handleTailwind}>
+                    <Card.Body className="align-items-center justify-content-between">
+                        <Row xs={1} md={2} lg={4}>
+                            <Col>
+                                <DiCode className="fs-1" />
+                                <h1>11</h1>
+                                <h5>Projects</h5>
+                            </Col>
+                            <Col>
+                                <FiGithub className="fs-1" />
+                                <h1>230</h1>
+                                <h5>Commits</h5>
+                            </Col>
+                            <Col>
+                                <SiBloglovin className="fs-1" />
+                                <h1>0</h1>
+                                <h5>Blogs Reach</h5>
+                            </Col>
+                            <Col>
+                                <DiCode className="fs-1" />
+                                <h1>0</h1>
+                                <h5>SO Reputations</h5>
+                            </Col>
+
+                        </Row>
+                    </Card.Body>
+                </Card>
             </Row>
         </div >
     );

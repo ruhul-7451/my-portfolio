@@ -10,7 +10,7 @@ const Contact = () => {
     }
 
     return (
-        <div >
+        <div>
             <div className="p-3 text-center">
                 <h4>
                     Follow me on
