@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Col, Container } from 'react-bootstrap';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { useForm, ValidationError } from '@formspree/react';
-import { Navigate, useNavigate } from 'react-router';
+import { useNavigate } from 'react-router';
 const Contact = () => {
     let navigate = useNavigate()
     const handleGitHub = () => {
@@ -13,9 +13,9 @@ const Contact = () => {
     }
     const [state, handleSubmit] = useForm("xeqnjrdb");
     if (state.succeeded) {
-        window.confirm('Message Send Successfully');
-        return navigate("/")
-
+        navigate("/home");
+        alert('Message Send Successfully! Thank you');
+        return <h1 className="text-primary">Thank you!</h1>
     }
 
 
@@ -32,9 +32,6 @@ const Contact = () => {
             <h3 className="text-center text-secondary mt-3">Send me Message</h3>
             <Col xs={12} md={5} className="p-3 mx-auto">
                 <form onSubmit={handleSubmit}>
-                    {/* <label htmlFor="name">
-                        Your Name
-                    </label> */}
                     <input
                         id="name"
                         type="text"
@@ -47,9 +44,7 @@ const Contact = () => {
                         field="email"
                         errors={state.errors}
                     />
-                    {/* <label htmlFor="email">
-                        Email Address
-                    </label> */}
+
                     <input
                         id="email"
                         type="email"
