@@ -11,18 +11,20 @@ import ShowProjects from './Pages/Projects/ShowProjects/ShowProjects';
 import Contact from './Pages/Contact/Contact';
 import AboutMe from './Pages/AboutMe/AboutMe';
 import Blogs from './Pages/Projects/Blogs/Blogs';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
     <BrowserRouter>
       <Header></Header>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/projects" element={<ShowProjects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
