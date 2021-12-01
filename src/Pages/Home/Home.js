@@ -16,7 +16,7 @@ const Home = () => {
             <Row className="align-items-center m-0 mx-auto">
                 <Col className="p-5" xs={12} md={6}>
                     <h1>Hi, I am Md. Ruhul Amin Khan</h1>
-                    <h4 className="text-secondary">Junior Software Engineer</h4>
+                    <h4 className="text-success">Junior Software Engineer</h4>
                     <article>
                         An enthusiastic and hardworking web developer seeking a challenging position to learn, contribute and grow with the organization. I am a MERN Stack Web developer. I have skills on JavaScript, React, HTML, CSS, Node js, Express js, MongoDB, Firebase, Heroku etc. You can see my recent projects on project section.
                     </article>

@@ -14,8 +14,8 @@ const Contact = () => {
     const [state, handleSubmit] = useForm("xeqnjrdb");
     if (state.succeeded) {
         navigate("/home");
-        alert('Message Send Successfully! Thank you');
-        return <h1 className="text-primary">Thank you!</h1>
+        alert('Message Sent Successfully! Thank you');
+        return <h1>Thank you!</h1>
     }
 
 
