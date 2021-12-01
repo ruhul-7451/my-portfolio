@@ -2,46 +2,40 @@
     {
         "id": 101,
         "title": "Car Bazar (A Car Selling Web App)",
-        "cardImg": "https://i.ibb.co/sVh7NWz/carbazar-pic1.png",
+        "cardImg": "https://i.ibb.co/KXMkW44/Car-Bazar-Cover.jpg",
         "detailImg1": "https://i.ibb.co/qR9GZXg/carbazar-pic2.png",
         "detailImg2": "https://i.ibb.co/f0nPMvh/carbazar-pic3.png",
         "detailImg3": "https://i.ibb.co/GsszVq2/carbazar-pic4.png",
-        "description": "Car Description"
+        "description": "User can select cars from various models. Can see specific model details and book the car for a test drive.",
+        "descriptionFull": "User can select cars from various models. Can see specific model details and book the car for a test drive. The web app features are only available for registered users only. An user can register in 2 ways, one by creating an account via email and password and second one via direct google signing in option. The application also redirect the user desire feature after successfully logging in. An authenticate user can also place a schedule, review items and can cancel any of the bookings. The site has also has admin control where the admin can control the user requests, can update user requests also adding new services to the user.",
+        "liveSite": "https://car-bazar-client.web.app/",
+        "GitClient": "https://github.com/ruhul-7451/car-shop-client-site",
+        "GitServer": "https://github.com/ruhul-7451/car-shop-server-site"
     },
     {
         "id": 102,
-        "title": "Car Bazar (A Car Selling Web App)",
-        "cardImg": "https://i.ibb.co/sVh7NWz/carbazar-pic1.png",
+        "title": "Book My Trip (Tourism Booking Web App)",
+        "cardImg": "https://i.ibb.co/gJJ4D8B/Book-My-Trip-Cover.jpg",
         "detailImg1": "https://i.ibb.co/qR9GZXg/carbazar-pic2.png",
         "detailImg2": "https://i.ibb.co/f0nPMvh/carbazar-pic3.png",
         "detailImg3": "https://i.ibb.co/GsszVq2/carbazar-pic4.png",
-        "description": "Car Description"
+        "description": "This is tour plan web app where an user can select a destination by knowing details, place their bookings.",
+        "descriptionFull": "This is tour plan web app where an user can select a destination by knowing details, place their bookings. The site offers a schedule booking. The user also offered by upcoming tour destinations and plan details. If any user want to make a personal tour plan can offer the host. The web app features are only available for registered users only. An user can register via direct google signing in option. The application also redirect the user desire feature after successfully logging in.",
+        "liveSite": "https://book-my-trip-2de56.web.app/",
+        "GitClient": "https://github.com/ruhul-7451/tourism-client-site",
+        "GitServer": "https://github.com/ruhul-7451/tourism-server-sites"
     },
     {
         "id": 103,
         "title": "Car Bazar (A Car Selling Web App)",
-        "cardImg": "https://i.ibb.co/sVh7NWz/carbazar-pic1.png",
+        "cardImg": "https://i.ibb.co/0GxqhyM/Doctors-Portal-Cover.jpg",
         "detailImg1": "https://i.ibb.co/qR9GZXg/carbazar-pic2.png",
         "detailImg2": "https://i.ibb.co/f0nPMvh/carbazar-pic3.png",
         "detailImg3": "https://i.ibb.co/GsszVq2/carbazar-pic4.png",
-        "description": "Car Description"
-    },
-    {
-        "id": 104,
-        "title": "Car Bazar (A Car Selling Web App)",
-        "cardImg": "https://i.ibb.co/sVh7NWz/carbazar-pic1.png",
-        "detailImg1": "https://i.ibb.co/qR9GZXg/carbazar-pic2.png",
-        "detailImg2": "https://i.ibb.co/f0nPMvh/carbazar-pic3.png",
-        "detailImg3": "https://i.ibb.co/GsszVq2/carbazar-pic4.png",
-        "description": "Car Description"
-    },
-    {
-        "id": 105,
-        "title": "Car Bazar (A Car Selling Web App)",
-        "cardImg": "https://i.ibb.co/sVh7NWz/carbazar-pic1.png",
-        "detailImg1": "https://i.ibb.co/qR9GZXg/carbazar-pic2.png",
-        "detailImg2": "https://i.ibb.co/f0nPMvh/carbazar-pic3.png",
-        "detailImg3": "https://i.ibb.co/GsszVq2/carbazar-pic4.png",
-        "description": "Car Description"
+        "description": "User can select cars from various models. Can see specific model details and book the car for a test drive.",
+        "descriptionFull": "User can select cars from various models. Can see specific model details and book the car for a test drive. The web app features are only available for registered users only. An user can register in 2 ways, one by creating an account via email and password and second one via direct google signing in option. The application also redirect the user desire feature after successfully logging in.",
+        "liveSite": "https://e-sheba-5c4f5.web.app/",
+        "GitClient": "https://github.com/ruhul-7451/health-care-site",
+        "GitServer": "https://github.com/ruhul-7451/health-care-site"
     }
 ]

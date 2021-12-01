@@ -12,6 +12,7 @@ import Contact from './Pages/Contact/Contact';
 import AboutMe from './Pages/AboutMe/AboutMe';
 import Blogs from './Pages/Projects/Blogs/Blogs';
 import NotFound from './Pages/NotFound/NotFound';
+import ShowDetails from './Pages/Projects/ShowProjects/ShowDetails';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/projects" element={<ShowProjects />} />
+        <Route path="/projects/:id" element={<ShowDetails />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/*" element={<NotFound />} />
